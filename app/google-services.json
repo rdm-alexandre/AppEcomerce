@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858478353812",
+    "project_id": "app-ecomerce-markepro",
+    "storage_bucket": "app-ecomerce-markepro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858478353812:android:9a85a85a7f3319aa260381",
+        "android_client_info": {
+          "package_name": "com.example.appecomercemarkepro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEqmcn3GwnU2sBpWxkMiV-SmWJBNnapKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
