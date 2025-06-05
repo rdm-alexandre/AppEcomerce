@@ -70,7 +70,7 @@ dependencies {
     //ViewModel
     implementation("androidx.activity:activity-ktx:1.10.1")
 
-    implementation("com.github.bumptech.glide:glide:4.15.1")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.tbuonomo:dotsindicator:5.0")

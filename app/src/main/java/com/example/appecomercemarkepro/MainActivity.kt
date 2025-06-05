@@ -25,12 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_favorite, R.id.navigation_notification, R.id.navigation_user
+                R.id.navigation_home, R.id.navigation_favorite, R.id.navigation_cart, R.id.navigation_notification, R.id.navigation_user
             )
         )
-
-        // Deixar sem action bar por enquanto
-        //setupActionBarWithNavController(navController, appBarConfiguration)
-        //navView.setupWithNavController(navController)
     }
 }
