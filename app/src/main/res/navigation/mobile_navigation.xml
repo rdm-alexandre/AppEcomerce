@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_favorite" />
 
     <fragment
-        android:id="@+id/navivation_cart"
+        android:id="@+id/navigation_cart"
         android:name="com.example.appecomercemarkepro.ui.cart.CartFragment"
         android:label="@string/title_cart"
         tools:layout="@layout/fragment_cart" />
