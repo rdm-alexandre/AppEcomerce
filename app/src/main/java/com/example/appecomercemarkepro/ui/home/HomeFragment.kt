@@ -47,6 +47,27 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val searchView = view.findViewById<androidx.appcompat.widget.SearchView>(R.id.searchView)
+
+        // Cor de fundo da barra
+        searchView.setBackgroundColor(resources.getColor(R.color.pink_200, null))
+
+        // Cor da área interna (onde se digita o texto)
+        val searchPlate = searchView.findViewById<View>(androidx.appcompat.R.id.search_plate)
+        searchPlate?.setBackgroundColor(resources.getColor(R.color.pink_200, null))
+
+        // Texto e dica de busca
+        val searchText = searchView.findViewById<android.widget.EditText>(androidx.appcompat.R.id.search_src_text)
+        searchText?.setTextColor(android.graphics.Color.BLACK)
+        searchText?.setHintTextColor(android.graphics.Color.DKGRAY)
+
+        // Ícones (lupa, botão limpar, etc.)
+        val magIcon = searchView.findViewById<android.widget.ImageView>(androidx.appcompat.R.id.search_mag_icon)
+        val closeIcon = searchView.findViewById<android.widget.ImageView>(androidx.appcompat.R.id.search_close_btn)
+        magIcon?.setColorFilter(android.graphics.Color.DKGRAY)
+        closeIcon?.setColorFilter(android.graphics.Color.DKGRAY)
+
+
         viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
 
         val imageList = arrayListOf(
