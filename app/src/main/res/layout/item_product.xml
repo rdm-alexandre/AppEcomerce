@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="290dp"
+    android:background="@drawable/white_bg">
+
+    <FrameLayout
+        android:id="@+id/flProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="158dp"
+            android:layout_height="164dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/ivFavoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="top|left"
+            app:srcCompat="@drawable/favorite_3_line"
+            app:tint="@color/pink" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITULO"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flProduto" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
+        android:text="desc desc desc desc desc desc desc desc desc desc desc desc..."
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <ImageView
+        android:id="@+id/ivStarFeedback"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDesc"
+        app:layout_constraintBottom_toTopOf="@+id/txtValue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtNumberOfStars"
+        app:srcCompat="@drawable/baseline_star_24"
+        app:tint="@color/yellow"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/txtNumberOfStars"
+        android:layout_width="10dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="2dp"
+        android:text="5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toBottomOf="@id/txtDesc"
+        app:layout_constraintBottom_toTopOf="@+id/txtValue"
+        app:layout_constraintStart_toEndOf="@+id/ivStarFeedback"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumberOfStars" />
+
+    <TextView
+        android:id="@+id/txtDescValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Em 0x de R$00,00"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
